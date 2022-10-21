@@ -1,0 +1,22 @@
+.Programs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.Programs-header{
+    color: white;
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    gap: 5rem;
+    /* it creates gap in between */
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    
+
+}

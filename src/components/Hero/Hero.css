@@ -1,0 +1,208 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  /* equal spaces between boxes , no spaces at starting */
+}
+
+.left-h {
+  padding: 2rem;
+  /* padding-top: 1.5rem; */
+  flex: 3;
+  display: flex;
+  gap: 2rem;
+  /* gap - same as justify-content:space-between ? */
+  flex-direction: column;
+}
+
+.right-h {
+  flex: 1;
+  position: relative;
+  background-color: orange;
+}
+
+.the-best-ad {
+  color: white;
+  background-color: #363d42;
+  padding: 20px 13px;
+  margin-top: 4rem;
+  border-radius: 2rem;
+  width: fit-content;
+  /* width is automatically fits to the content inside it. */
+  text-transform: uppercase;
+  /* transforms the text written to uppercase letters */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.the-best-ad > span {
+  z-index: 2;
+}
+/* .the-best-ad:hover{
+    color:orange;
+} */
+.the-best-ad > div {
+  position: absolute;
+  background-color: orange;
+  width: 5.4rem;
+  height: 80%;
+  left: 8px;
+  border-radius: 3rem;
+  z-index: 1;
+}
+
+.hero-text {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  /* gap: 1.4rem;
+  font-size: 4.5rem; */
+  gap: 1rem;
+  font-size: 3.8rem;
+  font-weight: bold;
+  text-overflow: inherit;
+  /* it will wrap around itself if the screen size is small */
+  color: white;
+}
+
+/* .hero-text>div:nth-of-type(3){ */
+.textbelowidealbody {
+  font-size: 1rem;
+  font-weight :200;
+  letter-spacing: 1px;
+  width: 80%;
+  /* width is 80% of of our total left side */
+  text-transform: none;
+}
+
+.experiencefigures {
+  display: flex;
+  gap: 2rem;
+}
+
+.experiencefigures > div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .experiencefigures>div>span:nth-of-type(1) */
+.experiencefigures > div > span:nth-child(1) {
+  color: white;
+  font-size: 2rem;
+}
+
+.experiencefigures > div > span:nth-child(2) {
+  color: grey;
+  text-transform: uppercase;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  font-weight: normal;
+}
+
+.hero-buttons > :nth-child(1) {
+  color: white;
+  background-color: transparent;
+  border: 2px solid orange;
+}
+
+.hero-buttons > :nth-child(2) {
+  color: white;
+  background-color: transparent;
+  border: 2px solid orange;
+}
+
+.hero-buttons > :nth-child(1):hover {
+  background-color: orange;
+}
+
+.hero-buttons > :nth-child(2):hover {
+  background-color: orange;
+}
+
+.right-h > .btn {
+  position: absolute;
+  right: 3rem;
+  top: 2rem;
+  color: white;
+  background-color: transparent;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+
+.right-h > .btn:hover {
+  background-color: #3c3f45;
+}
+
+.heart-rate {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: fit-content;
+  padding: 1rem;
+  align-items: center;
+  background-color: #3c3f45;
+  position: absolute;
+  top: 6rem;
+  right: 4rem;
+  border-radius: 4px;
+}
+
+.heart-rate > img {
+  width: 2rem;
+}
+.heart-rate > span {
+  color: white;
+}
+
+.hero-image {
+  position: absolute;
+  top: 10rem;
+  right: 8rem;
+  width: 23rem;
+  /* z-index: -2; */
+}
+
+.hero-image-back {
+  position: absolute;
+  top: 4rem;
+  right: 20rem;
+  width: 15rem;
+  z-index: -1;
+}
+
+.Calories {
+  background-color: #6a6f78;
+  display: flex;
+  gap: 2rem;
+  border-radius: 5px;
+  padding: 1rem;
+  width: fit-content;
+  position: absolute;
+  top: 38rem;
+  right: 28rem;
+}
+
+.Calories > img {
+  width: 3rem;
+}
+
+.Calories > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.Calories > div > :nth-child(1) {
+  /* color: #808080; */
+  color: #9c9c9c;
+}
+
+.Calories > div > :nth-child(2) {
+  color: white;
+  font-size: 1.5rem;
+}
