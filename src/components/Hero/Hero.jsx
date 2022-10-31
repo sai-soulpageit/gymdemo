@@ -8,12 +8,23 @@ import Hero_image_back from "../../assets/hero_image_back.png";
 import Heart from "../../assets/heart.png";
 import Calories from "../../assets/calories.png";
 
+// import Demoprograms from "../Pages/Demoprograms";
+
+
+// imports for browser router
+
+// import {  BrowserRouter } from "react-router-dom";
+
 const Hero = () => {
   return (
     <div className="hero">
       <div className="left-h">
         {/* for header */}
-        <Header />
+          {/* <Header/> */}
+
+         {/* <BrowserRouter>
+           <Header/>
+         </BrowserRouter> */}
 
         {/* for the ad */}
         <div className="the-best-ad">
@@ -81,19 +92,19 @@ const Hero = () => {
         <img
           src={Hero_image_back}
           alt="heroimageback"
-          className="hero-image-back"/>
+          className="hero-image-back"
+        />
 
         {/* for calories */}
         <div className="Calories">
-         <img src={Calories} alt="calories"  />
+          <img src={Calories} alt="calories" />
 
-         <div>
-          <span>Calories Burned</span>
-          <span>260 kcal</span>
-         </div>
+          <div>
+            <span>Calories Burned</span>
+            <span>260 kcal</span>
+          </div>
 
         </div>
-
       </div>
     </div>
   );
